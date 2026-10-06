@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>History, Trust & Your Health | EquiGen Health Foundation</title>
+<style>
+:root{
+  --purple:#5f3b8c; --purple2:#8056aa; --lav:#f3eef8; --lav2:#e6daf1;
+  --ink:#26212b; --muted:#655e69; --white:#fff; --gold:#c69b52;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fbfafc;line-height:1.65}
+header{background:linear-gradient(135deg,#4e2d77,#8056aa);color:white;padding:64px 20px}
+.wrap{max-width:1050px;margin:auto}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:700;opacity:.9}
+h1{font-family:Georgia,serif;font-size:clamp(2.3rem,6vw,4.6rem);line-height:1.05;margin:.25em 0}
+header p{max-width:760px;font-size:1.15rem}
+nav{position:sticky;top:0;z-index:5;background:white;border-bottom:1px solid #e7e1ea;padding:12px 20px}
+nav .wrap{display:flex;gap:12px;flex-wrap:wrap}
+nav a{color:var(--purple);text-decoration:none;font-weight:700;font-size:.9rem}
+section{padding:64px 20px}
+section.alt{background:var(--lav)}
+h2{font-family:Georgia,serif;color:var(--purple);font-size:2.2rem;margin-top:0}
+h3{color:var(--purple)}
+.lead{font-size:1.12rem;max-width:850px}
+.notice{background:white;border-left:5px solid var(--gold);padding:20px;border-radius:8px;box-shadow:0 5px 18px #0000000b}
+.timeline{display:grid;gap:14px;margin-top:28px}
+.timeline button{width:100%;text-align:left;background:white;border:1px solid #ddd3e5;border-radius:12px;padding:18px;cursor:pointer;font:inherit;color:var(--ink)}
+.timeline button strong{color:var(--purple);font-size:1.05rem}
+.timeline .detail{display:none;padding:14px 18px 4px;color:var(--muted)}
+.timeline button.open .detail{display:block}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:25px}
+.card{background:white;border:1px solid #e1d8e8;border-radius:14px;padding:22px;box-shadow:0 5px 20px #4e2d770d}
+.tnn{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.tnn div{background:white;padding:22px;border-radius:14px;border-top:5px solid var(--purple2)}
+.tnn span{display:inline-block;font-weight:800;color:var(--purple);letter-spacing:.08em;font-size:.8rem}
+.topicBtns,.tabs{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}
+.topicBtns button,.tabs button,.printBtn{border:0;border-radius:999px;padding:11px 16px;background:#e8dff0;color:#4e2d77;font-weight:700;cursor:pointer}
+.topicBtns button.active,.tabs button.active,.printBtn{background:var(--purple);color:white}
+.panel{background:white;border-radius:14px;padding:24px;border:1px solid #dfd4e6}
+.questions{padding-left:22px}
+.source a{color:var(--purple);font-weight:700}
+footer{background:#2f203c;color:white;padding:40px 20px}
+.small{font-size:.9rem;color:var(--muted)}
+footer .small{color:#ddd2e5}
+@media(max-width:720px){.tnn{grid-template-columns:1fr}section{padding:45px 18px}}
+@media print{nav,.topicBtns,.tabs,.printBtn{display:none}body{background:white}section{padding:25px}.panel,.card{box-shadow:none}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <div class="eyebrow">EquiGen Health Foundation • Learning Hub</div>
+  <h1>History, Trust &amp; Your Health</h1>
+  <p>Understanding the past. Navigating healthcare today. Advocating for your future.</p>
+ </div>
+</header>
+
+<nav><div class="wrap">
+<a href="#why">Why Trust Matters</a><a href="#history">History</a><a href="#then-now-next">Then • Now • Next</a>
+<a href="#genetics">Genetics & Privacy</a><a href="#advocate">Advocate for Yourself</a>
+</div></nav>
+
+<section id="why"><div class="wrap">
+<h2>Why We’re Talking About Trust</h2>
+<p class="lead">For generations, Black communities have experienced both extraordinary advances in medicine and profound injustices within healthcare and medical research. Understanding this history matters.</p>
+<p>Medical mistrust did not develop without context. It has been shaped by documented experiences of exploitation, exclusion, discrimination, lack of informed consent, and unequal treatment.</p>
+<div class="notice"><strong>EquiGen’s approach:</strong> Building healthier relationships with healthcare should not require forgetting the past. We can understand what happened, learn what protections exist today, recognize where inequities remain, and ask informed questions about our care.</div>
+</div></section>
+
+<section id="history" class="alt"><div class="wrap">
+<h2>How Did We Get Here?</h2>
+<p class="lead">Select an event to explore how history shaped modern questions about consent, research, biological samples, and trust.</p>
+<div class="timeline">
+<button onclick="toggleItem(this)"><strong>1800s — Exploitation and experimentation</strong><div class="detail">Enslaved Black people were subjected to medical experimentation in a system in which meaningful consent was impossible. Some advances in American medicine developed within this deeply unequal environment. Learning this history helps explain why medical authority can carry a different historical meaning for Black communities.</div></button>
+<button onclick="toggleItem(this)"><strong>1840s — Gynecologic experimentation on enslaved women</strong><div class="detail">J. Marion Sims performed repeated surgical experiments on enslaved Black women, including Anarcha, Lucy and Betsey. Their experiences are now an important part of discussions about medical ethics, consent, racism, pain and the history of gynecology.</div></button>
+<button onclick="toggleItem(this)"><strong>1932–1972 — U.S. Public Health Service Syphilis Study at Tuskegee</strong><div class="detail">Hundreds of Black men were enrolled in a study without adequate informed consent. Researchers did not provide participants adequate treatment even after penicillin became the standard treatment for syphilis. The men were not deliberately infected with syphilis—a common misconception—but the deception and withholding of treatment were profound ethical violations.</div></button>
+<button onclick="toggleItem(this)"><strong>1951 — Henrietta Lacks and HeLa cells</strong><div class="detail">Cells taken from Henrietta Lacks during cervical cancer treatment became the first widely used immortal human cell line. Her cells contributed enormously to biomedical research, but they were taken and used without her knowledge or consent, raising enduring questions about tissue, consent, privacy and benefit.</div></button>
+<button onclick="toggleItem(this)"><strong>1974–1979 — Modern research protections expand</strong><div class="detail">The National Research Act strengthened oversight of human-subject research and established the National Commission. The 1979 Belmont Report articulated three foundational ethical principles: respect for persons, beneficence and justice.</div></button>
+<button onclick="toggleItem(this)"><strong>Today — Genomics creates new trust questions</strong><div class="detail">DNA can reveal information about an individual and biological relatives. Modern genetic testing and research therefore raise questions about privacy, data sharing, sample storage, representation, consent and who benefits from genomic discoveries.</div></button>
+</div>
+<p class="small">This timeline is an educational overview rather than a complete history of racism and medicine.</p>
+</div></section>
+
+<section id="then-now-next"><div class="wrap">
+<h2>Then. Now. Next.</h2>
+<p class="lead">History becomes useful when we connect it to the decisions people face today.</p>
+<div class="topicBtns">
+<button class="active" onclick="showTNN('lacks',this)">Henrietta Lacks</button>
+<button onclick="showTNN('tuskegee',this)">Tuskegee Study</button>
+<button onclick="showTNN('genomics',this)">Genomic Research</button>
+</div>
+<div id="tnnPanel" class="tnn"></div>
+</div></section>
+
+<section id="genetics" class="alt"><div class="wrap">
+<h2>What Does This Have to Do With Genetics?</h2>
+<p class="lead">Genetic information can be powerful. It can also feel deeply personal. Asking questions about what happens to your DNA is reasonable.</p>
+<div class="cards">
+<div class="card"><h3>My DNA</h3><p>Why is this test being recommended? What genes or conditions are being evaluated? Could the result reveal information relevant to my relatives?</p></div>
+<div class="card"><h3>My Sample</h3><p>Will my blood, saliva or tissue be stored? For how long? Can I decline research use? What happens to the sample when testing is complete?</p></div>
+<div class="card"><h3>My Data</h3><p>Who can access my genetic information? Will it be de-identified? Can it be shared with researchers or placed in a database?</p></div>
+<div class="card"><h3>Representation</h3><p>People of African ancestry have historically been underrepresented in many genomic datasets. Representation matters because genetic variation differs across populations and influences what science is able to learn and interpret.</p></div>
+</div>
+<div class="notice" style="margin-top:24px"><strong>What about GINA?</strong> The federal Genetic Information Nondiscrimination Act generally prohibits genetic-information discrimination in health insurance and employment, but it does not provide the same protections for life, disability, or long-term-care insurance. Other laws and state protections may also apply.</div>
+</div></section>
+
+<section id="advocate"><div class="wrap">
+<h2>Your Rights. Your Questions. Your Choice.</h2>
+<p class="lead">Trust does not have to mean accepting everything without question. Informed healthcare includes understanding your options and participating in decisions about your body.</p>
+<div class="tabs">
+<button class="active" onclick="showQuestions('testing',this)">Before Genetic Testing</button>
+<button onclick="showQuestions('research',this)">Before Joining Research</button>
+<button onclick="showQuestions('visit',this)">At a Healthcare Visit</button>
+</div>
+<div id="questionPanel" class="panel"></div>
+<button class="printBtn" onclick="window.print()" style="margin-top:18px">Print / Save These Questions</button>
+</div></section>
+
+<section class="alt"><div class="wrap">
+<h2>Learn From Trusted Sources</h2>
+<div class="cards">
+<div class="card source"><h3>CDC</h3><p>Learn about the U.S. Public Health Service Syphilis Study at Tuskegee and its ethical legacy.</p><a href="https://www.cdc.gov/tuskegee/" target="_blank" rel="noopener">Visit CDC →</a></div>
+<div class="card source"><h3>HHS — Belmont Report</h3><p>Read the ethical principles that continue to guide human-subject research.</p><a href="https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/" target="_blank" rel="noopener">Visit HHS →</a></div>
+<div class="card source"><h3>NIH / NHGRI</h3><p>Explore genetic discrimination, privacy, genomics and federal protections.</p><a href="https://www.genome.gov/about-genomics/policy-issues/Genetic-Discrimination" target="_blank" rel="noopener">Visit NHGRI →</a></div>
+<div class="card source"><h3>NIH — Henrietta Lacks</h3><p>Learn about the HeLa genome, the Lacks family and NIH's data-use agreement.</p><a href="https://osp.od.nih.gov/hela-cells/" target="_blank" rel="noopener">Visit NIH →</a></div>
+</div>
+</div></section>
+
+<footer><div class="wrap">
+<strong>EquiGen Health Foundation</strong>
+<p class="small">This content is for educational purposes only and is not medical or legal advice. Laws, research practices and institutional policies can change. Ask your healthcare provider, genetic counselor, research team or an appropriate professional questions specific to your situation.</p>
+</div></footer>
+
+<script>
+const tnn={
+lacks:[
+["THEN","Henrietta Lacks’ cells were taken during medical treatment and used for research without her knowledge or consent."],
+["NOW","Modern research has stronger consent and oversight requirements, although the rules governing stored biospecimens and secondary research can be complex."],
+["NEXT","Ask: Will my sample be stored? Could it be used for research? Who can access associated data? What choices do I have?"]
+],
+tuskegee:[
+["THEN","Black men were deceived and denied adequate treatment in a decades-long federal study. The abuse became a defining example of research misconduct."],
+["NOW","Human-subject research is governed by informed-consent requirements, institutional review, federal regulations and ethical standards designed to protect participants."],
+["NEXT","Ask: What is the purpose of this study? What are the risks and benefits? Who reviewed it? Can I leave the study? What happens to my data if I withdraw?"]
+],
+genomics:[
+["THEN","Many communities were excluded from the benefits of research while also experiencing exploitation and unequal treatment."],
+["NOW","Genomic medicine is advancing rapidly, but representation, privacy, equitable access and benefit-sharing remain important concerns."],
+["NEXT","Ask who is represented in the evidence behind a test, how your DNA and data will be used, and whether research participation is optional."]
+]};
+function showTNN(key,btn){
+ document.querySelectorAll('.topicBtns button').forEach(b=>b.classList.remove('active')); btn.classList.add('active');
+ document.getElementById('tnnPanel').innerHTML=tnn[key].map(x=>`<div><span>${x[0]}</span><p>${x[1]}</p></div>`).join('');
+}
+function toggleItem(el){el.classList.toggle('open')}
+const qs={
+testing:["Why are you recommending this genetic test?","What genes or conditions are being tested?","What could a positive, negative or uncertain result mean?","Who will have access to my results?","Will my sample or genetic data be stored?","Can my sample or data be used for research?","Can I decline research use and still receive the clinical test?","Could the result have implications for my biological relatives?","Is genetic counseling available before or after testing?"],
+research:["What question is this research trying to answer?","What will I be asked to do?","What are the potential risks and benefits?","Who reviewed and approved this research?","Will my DNA, samples or health information be stored?","Could my information be shared with other researchers?","How will my privacy be protected?","Will I receive individual results or research findings?","Can I withdraw, and what happens to data already collected?"],
+visit:["What are my options, including doing nothing for now?","What are the benefits and risks of each option?","Why are you recommending this test, medication or procedure for me?","Is there anything about my family history that changes your recommendation?","What symptoms or changes should make me seek follow-up care?","Can you explain that in another way?","Can I have written information to review later?","Would a specialist or genetic counselor be helpful?"]
+};
+function showQuestions(key,btn){
+ document.querySelectorAll('.tabs button').forEach(b=>b.classList.remove('active')); btn.classList.add('active');
+ document.getElementById('questionPanel').innerHTML='<h3>Questions you can ask</h3><ul class="questions">'+qs[key].map(q=>`<li>${q}</li>`).join('')+'</ul>';
+}
+showTNN('lacks',document.querySelector('.topicBtns button'));
+showQuestions('testing',document.querySelector('.tabs button'));
+</script>
+</body>
+</html>
